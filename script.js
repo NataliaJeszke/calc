@@ -31,7 +31,7 @@
         if (document.querySelector("#divi")){
             let num1 = Number(document.querySelector("#num1").value);
             let num2 = Number(document.querySelector("#num2").value);
-                if(num1===0 || num2===0){
+                if(num2===0){
                     alert("dzielisz przez zero")
                 } else {
                     let divi = num1 / num2;

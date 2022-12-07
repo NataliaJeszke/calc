@@ -13,53 +13,41 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b433241389.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <section>
       <div class="bg-image pt-3">
         <div
-          class="container d-flex align-items-center justify-content-center flex-column w-50 h-50"
+          class="container d-flex align-items-center justify-content-center flex-column w-50 h-50 shadow-lg rounded"
         >
-          <div><h2 class="text-center mb-4">Kalkulator</h2></div>
-          <div class="text-center">
+          <div><h1 class="text-center mb-4">Kalkulator</h1></div>
+          <div class="text-center pb-sm-3 num">
             <label for="fnumber">Liczba 1:</label>
             <input type="number" id="num1" name="fnumber" />
           </div>
-          <div class="text-center">
+          <div class="text-center num">
             <label for="snumber">Liczba 2:</label>
             <input type="number" id="num2" name="snumber" />
           </div>
-          <div class="d-flex align-items-center mt-2">
-            <input
-              type="button"
-              class="btn btn-dark me-1"
-              id="sum"
-              value="+"
-              onclick="sumowanie()"
-            />
-            <input
-              type="button"
-              class="btn btn-dark me-1"
-              id="sub"
-              value="-"
-              onclick="odejmowanie()"
-            />
-            <input
-              type="button"
-              class="btn btn-dark me-1"
-              id="multi"
-              value="*"
-              onclick="mnozenie()"
-            />
-            <input
-              type="button"
-              class="btn btn-dark"
-              id="divi"
-              value="/"
-              onclick="dzielenie()"
-            />
+          <div class="d-flex align-items-center mt-2 ps-sm-5 ms-sm-4">
+            <button class="btn" id="sum" value="+" onclick="sumowanie()">
+              <i class="fa-solid fa-plus fa-2xl"></i>
+            </button>
+            <button class="btn" id="sub" value="-" onclick="odejmowanie()">
+              <i class="fa-solid fa-minus fa-2xl"></i>
+            </button>
+            <button class="btn" id="multi" value="*" onclick="mnozenie()">
+              <i class="fa-solid fa-xmark fa-2xl"></i>
+            </button>
+            <button class="btn" id="divi" value="/" onclick="dzielenie()">
+              <i class="fa-solid fa-divide fa-2xl"></i>
+            </button>
           </div>
-          <div class="text-center pt-3">
+          <div class="text-center pt-3 wynik-txt">
             <label for="wynik">Wynik:</label>
             <input type="text" id="wynik" readonly="readonly" />
           </div>

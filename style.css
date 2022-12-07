@@ -16,4 +16,10 @@
 .container{
     background-color: rgba(161, 158, 153, 0.637);
     z-index: 2;
+
+}
+
+.num, .wynik-txt{
+    font-size: 20px;
+    font-weight: bold;
 }
